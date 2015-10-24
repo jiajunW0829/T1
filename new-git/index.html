@@ -1,0 +1,77 @@
+<html>
+<head>
+<center><img src="LOGO1.jpg" height="112" width="150">
+<link href="menu.css" rel="stylesheet" type="text/css">
+<link href="layout.css" rel="stylesheet" type="text/css">
+<title>Home</title>
+</head>
+<body><center>
+<ul id="nav">
+<li><a href="index.html">Home</a></li>
+<li><a class="hsubs" href="product.html">Product</a>
+ <ul class="subs">
+<li><a href="DSLR.html">DSLR</a></li>
+<li><a href="EOS M.html">EOS M</a></li>
+<li><a href="Printers.html">Printers</a></li>
+<li><a href="Multifunction printer.html">Multifunction Printers</a></li>
+</ul>
+
+<li><a class="hsubs" href="service.html">Service</a>
+ <ul class="subs">
+<li><a href="Lens.html">Lens</a></li>
+<li><a href="Accessories.html">Accessories</a></li>
+</ul>
+
+<li><a class="hsubs" href="dealer.html">Dealers</a>
+</li>
+
+<li><a class="hsubs" href="about us.html">About</a>
+</li>
+
+<li><a class="hsubs" href="contact us.html">Contact Us</a>
+</li>
+
+</li>
+<div id="lavalamp">
+</div></center>
+</center>
+</body>
+</html>
+
+<br/><br/><br/>
+<html>
+   <head><center>
+      <title>Home</title>
+      <script type = "text/javascript">
+          function displayImage(image) {
+              document.getElementById("img").src = image;
+          }
+
+          function displayNextImage() {
+              x = (x == images.length - 1) ? 0 : x + 1;
+              displayImage(images[x]);           
+          }
+
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              displayImage(images[x]);           
+          }
+
+          function startTimer() {
+              setInterval(displayNextImage, 3000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "images 1.jpg";
+          images[1] = "images 2.jpg";
+          images[2] = "images 3.jpg";
+		  images[3] = "images 4.jpg";
+		  images[4] = "images 5.jpg";
+		  images[5] = "images 6.jpg";
+      </script>
+   </head>
+   <body onload = "startTimer()">
+       <img id="img" src="images 6.jpg">
+   </body><br/><br/><br/><br/><br/><br/>
+   <p><center>copyright &#169 2014 Canon Marketing Malaysia Sdn Bhd. All Right Reserved.</center></p>
+</html>
